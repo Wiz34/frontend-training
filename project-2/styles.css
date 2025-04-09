@@ -16,9 +16,22 @@ body {
     background-color: #ffff;
     padding:0;
     border-radius: 8px;
-    box-shadow:0 4px 8px rgba(247, 147, 26, 1);
+    box-shadow:0 4px 8px rgb(240, 142, 22);
     padding: 20px;
     width: 50%;
     text-align: center;
     max-width: 300px;
+}
+
+#last-updated {
+
+    font-size: 12px;
+    color: #666;
+    margin: 5px 0
+}
+
+#title {
+    font-size: 24px;
+    margin: 10px 0;
+    color: rgb(240, 142, 22);
 }

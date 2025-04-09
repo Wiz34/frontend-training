@@ -4,6 +4,9 @@ function convertToBTC() {
     const btc = usd / btcPrice;
     document.getElementById('btc-result').textContent = `BTC: ${btc.toFixed(8)}`;
     console.log('usd')
+    //Timestamp
+    const now = new Date().toLocaleTimeString();
+    document.getElementById('last-updated').textContent = `Last updated: ${now}`;
 
 }
 
