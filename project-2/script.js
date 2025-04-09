@@ -6,3 +6,9 @@ function convertToBTC() {
     console.log('usd')
 
 }
+
+function clearConverter() {
+    document.getElementById('usd-input').value = ''
+    document.getElementById("btc-result").textContent = 'BTC: 0';
+    console.log('clear')
+}
