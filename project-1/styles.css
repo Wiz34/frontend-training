@@ -1,0 +1,37 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ 
+    height: 100vh;
+    margin:0;
+    background-color: #f0f0f0;
+}
+.card{
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow:0 4px 8px rgba(247, 147, 26, 1);
+    width: 50%;
+   max-width:300px; 
+   
+
+}
+h1 { 
+    font-size: 24px;
+    margin: 0;
+    color:#f7931a; /*Bitcoin Orange */
+
+}
+.price {
+    font-size: 32px;
+    font-weight:bold;
+    margin: 10px 0;
+}
+.change {
+    font-size:18px;
+    color: green;
+    margin:0;
+}
