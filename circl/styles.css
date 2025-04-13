@@ -54,3 +54,66 @@ button:hover {
     color: #333;
     transition: opacity 0.3s ease; /* For animation */
 }
+.logo {
+    font-size: 32px;
+    font-weight:bold;
+    color: #f7931a; /* Bitcoin orange for now */
+    margin-bottom: 10px;
+    text-align: center;
+}
+.susu-details {
+    background-color: #f9f9f9;
+    padding: 15px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+.susu-details p {
+    margin: 5px 0;
+    font-size: 16px;
+}
+#contribution-display {
+    font-size: 24px;
+    font-weight: bold;
+    color: #f7931a; /* Bitcoin orange */
+}
+#next-payout {
+    color: #333;
+}
+#trust-score {
+    color: #666;
+}
+h2 {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 10px;
+}
+#members-list {
+    list-style: none;
+    padding: 0;
+}
+#members-list li {
+    padding: 8px;
+    background-color: #e0e0e0;
+    margin-bottom: 5px;
+    border-radius: 5px;
+    text-align: center;
+}
+a {
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+    color: #f7931a;
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
+.highlight {
+    font-weight: bold;
+    color: green;
+}
+#last-updated {
+    font-size: 12px;
+    color: #666;
+    margin: 5px 0;
+}
