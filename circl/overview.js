@@ -11,10 +11,10 @@ document.getElementById("trust-score").textContent = `TrustScore: ${susuData.tru
 
 const membersList = document.getElemnetById('members-list');
 membersList.innerHtml = '';
-susuData.members.forearch(memeber => {
+susuData.members.forearch(member => {
     const li = document.createElement('li');
     li.textContent = membersList;
-    memebersList.appendChild(li);
+    membersList.appendChild(li);
 });
 
 const payoutText = document.getElementById("next-payout");
