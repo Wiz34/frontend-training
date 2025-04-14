@@ -147,3 +147,17 @@ a:hover {
     color: #333;
     transition: opacity 0.3s ease;
 }
+#total-saved {
+    font-size: 20px;
+    font-weight: bold;
+    color: #f7931a;
+    margin-bottom: 20px;
+}
+#pools-list li {
+    background-color: #f9f9f9;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+}

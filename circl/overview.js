@@ -1,4 +1,4 @@
-const susuData = {
+const susuData = JSON.parse(localStorage.getItem("susuData")) || {
     contribution: 50,
     frequency: 'Weekly',
     payoutOder: 3,
@@ -9,8 +9,8 @@ document.getElementById("contribution-display").textContent = `$${susuData.contr
 document.getElementById("next-payout").textContent = `Next Payout: You (Week ${susuData.payoutOrder})`;
 document.getElementById("trust-score").textContent = `TrustScore: ${susuData.trustScore}`;
 
-const membersList = document.getElemnetById('members-list');
-membersList.innerHtml = '';
+const membersList = document.getElementById('members-list');
+membersList.innerHTML = '';
 susuData.members.forearch(member => {
     const li = document.createElement('li');
     li.textContent = membersList;
@@ -19,6 +19,5 @@ susuData.members.forearch(member => {
 
 const payoutText = document.getElementById("next-payout");
 payoutText.innerHTML = `Next Payout: <span class="highlight">You</span> (Week ${susuData.payoutOrder})`;
-
-
 document.getElementById("last-updated").textContent = `Last updated: ${new Date().toLocaleTimeString()}`;
+
