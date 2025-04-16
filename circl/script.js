@@ -17,6 +17,8 @@ document.getElementById("susu-form").addEventListener("submit", function(event) 
             return
         } 
 
+        console.log("Inputs:", contribution, frequency, payoutOrder)
+
             const susuData = {
               constribution: Number(contribution),
              frequency,
@@ -25,11 +27,11 @@ document.getElementById("susu-form").addEventListener("submit", function(event) 
              members:["Anna", "Daniel", "Mark", "Sophie"]
               };
              localStorage.setItem("susuData", JSON.stringify(susuData));
-           
+           //Debug: Confirm save
             console.log("Saved to localStorage:", localStorage.getItem("susuData"));
 
 
-
+        // Display the result
 
     
         result.textContent = `Susu created! $${contribution} ${frequency}, payout in week ${payoutOrder}.`;
