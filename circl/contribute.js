@@ -3,7 +3,7 @@ document.getElementById('contribute-btn').addEventListener('click',function() {
     result.textContent = 'Contrubution successful!';
     result.style.color = 'green';
     result.style.opacity = '0';
-    sertTimeout(() => {
+    setTimeout(() => {
         result.style.opacity = '1';
     }, 100);
 

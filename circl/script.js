@@ -20,7 +20,7 @@ document.getElementById("susu-form").addEventListener("submit", function(event) 
         console.log("Inputs:", contribution, frequency, payoutOrder)
 
             const susuData = {
-              constribution: Number(contribution),
+              contribution: Number(contribution),
              frequency,
               payoutOrder: Number(payoutOrder),
              trustScore: 4.2,

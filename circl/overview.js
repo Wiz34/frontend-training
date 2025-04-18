@@ -17,13 +17,19 @@ document.getElementById("trust-score").textContent = `TrustScore: ${susuData.tru
 const membersList = document.getElementById('members-list');
 function displayMembers() {
          membersList.innerHTML = '';
-        susuData.members.foreach(member => {
+        susuData.members.forEach(member => {
             const li = document.createElement('li');
             li.textContent = member;
             membersList.appendChild(li);
         });
 }
 displayMembers();
+
+document.getElementById("clear-members").addEventListener("click", function() {
+    membersList.innerHTML = "";
+    console.log("Members cleared");
+});
+
 document.getElementById("refresh-members").addEventListener("click", function() {
     displayMembers();
     console.log("Members refreshed:", susuData.members);
