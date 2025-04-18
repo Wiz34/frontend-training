@@ -161,3 +161,19 @@ a:hover {
     display: flex;
     justify-content: space-between;
 }
+#timeline-list {
+    list-style: none;
+    padding: 0;
+}
+#timeline-list li {
+    background-color: #f9f9f9;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+}
+#timeline-list li.you {
+    background-color: #f7931a;
+    color: white;
+}
