@@ -177,3 +177,9 @@ a:hover {
     background-color: #f7931a;
     color: white;
 }
+
+#escrow-total {
+    font-size: 18px;
+    color: #f7931a;
+    margin-bottom: 15px;
+}
