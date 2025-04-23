@@ -13,14 +13,26 @@ let escrowData = JSON.parse(localStorage.getItem("escrowData")) || {
 };
 
 
+const contributionsList = document.getElementById("contributions-list");
+function displayContributions() {
+    contributionsList.innerHTML = "";
+    escrowData.contributions.forEach(contribution => {
+        const li = document.createElement("li");
+        li.textContent = `${contribution.member} contributed $${contribution.amount}`;
+        contributionsList.appendChild(li);
+    });
+}
+displayContributions();
+
 
 
 document.getElementById("escrow-total").textContent = `Funds in Escrow: $${escrowData.totalHeld}`;
+
 document.getElementById('contribute-btn').addEventListener('click',function() {
     const result = document.getElementById('contribute-result');
     const amount = susuData.contribution;// Use the contribution amount from susuData
     escrowData.totalHeld += amount;
-    escrowData.contributions.push({
+    escrowData.contribution.push({
         member: "You",
         amount: amount,
         date: new Date().toLocaleDateString()
@@ -37,3 +49,9 @@ document.getElementById('contribute-btn').addEventListener('click',function() {
     }, 100);
 
 });
+document.getElementById('show-contributions').addEventListener('click', function() {
+    console.log('contributions:',escrowData.contribution);
+    alert('check the console for contributions')
+    
+})
+
