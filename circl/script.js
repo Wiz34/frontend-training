@@ -1,3 +1,6 @@
+const user = JSON.parse(localStorage.getItem("user")) || { username: "Guest" };
+document.getElementById("welcome-message").textContent = `Welcome, ${user.username}! Create Susu with Circl`;
+
 document.getElementById("susu-form").addEventListener("submit", function(event) {
     console.log("Form submitted!");
     event.preventDefault();
