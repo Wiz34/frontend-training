@@ -27,7 +27,7 @@ document.getElementById("susu-form").addEventListener("submit", function(event) 
              frequency,
               payoutOrder: Number(payoutOrder),
              trustScore: 4.2,
-             members:["Anna", "Daniel", "Mark", "Sophie"]
+             members:["Anna", "Daniel", "Mark", user.username]
               };
              localStorage.setItem("susuData", JSON.stringify(susuData));
            //Debug: Confirm save
