@@ -45,4 +45,7 @@ document.getElementById("susu-form").addEventListener("submit", function(event) 
         }, 100);
     });
 
-   
+    document.getElementById("logout").addEventListener("click", function() {
+        localStorage.removeItem("user");
+        window.location.href = "signup.html";
+    });

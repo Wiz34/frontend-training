@@ -16,7 +16,7 @@ let escrowData = JSON.parse(localStorage.getItem("escrowData")) || {
 const contributionsList = document.getElementById("contributions-list");
 function displayContributions() {
     contributionsList.innerHTML = "";
-    escrowData.contributions.forEach(contribution => {
+    escrowData.contribution.forEach(contribution => {
         const li = document.createElement("li");
         li.textContent = `${contribution.member} contributed $${contribution.amount}`;
         contributionsList.appendChild(li);
