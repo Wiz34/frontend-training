@@ -29,6 +29,7 @@ document.getElementById("susu-form").addEventListener("submit", function(event) 
              trustScore: 4.2,
              members:["Anna", "Daniel", "Mark", user.username]
               };
+              console.log("susuData before save:", susuData);
              localStorage.setItem("susuData", JSON.stringify(susuData));
            //Debug: Confirm save
             console.log("Saved to localStorage:", localStorage.getItem("susuData"));
