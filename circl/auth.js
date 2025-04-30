@@ -19,5 +19,5 @@ document.getElementById("auth-form").addEventListener("submit", function(event) 
     setTimeout(() => { result.style.opacity = "1"; }, 100);
 
     // Redirect to index.html
-    setTimeout(() => { window.location.href = "index.html"; }, 1000);
+    setTimeout(() => { window.location.href = "onboarding.html"; }, 1000);
 });
